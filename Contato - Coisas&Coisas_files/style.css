@@ -1,0 +1,105 @@
+header{
+    background: rgb(241, 199, 182);
+}
+
+nav{
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(37, 172, 172);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #e23778;
+    text-decoration: underline;
+}
+
+.produto {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produto li {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    margin: 1% 4.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 6px dotted  rgb(37, 172, 172);
+    border-radius: 10px;
+}
+
+.produto li:hover {
+    border-color:  rgb(241, 199, 182);
+}
+
+.produto li:hover h2{
+    font-size: 38px;
+    color: rgb(241, 199, 182);
+}
+
+.produto li:active {
+    border-color:#e23778;
+}
+
+.produto h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer{
+    text-align: center;
+    background: url("bgloja.jpg");
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.formulario{
+    width: 40%;
+}

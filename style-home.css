@@ -1,0 +1,34 @@
+h1{
+    text-align: left;
+    color: orange;
+}
+
+#papelaria{
+    width: 100%;
+}
+
+.primeiradiv{
+    background: orange;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+.itens{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+#servicos{
+    width: 50%;
+}
