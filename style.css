@@ -69,13 +69,12 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url("bgloja.jpg");
+    background: #888888
 }
 
 .copyright{
     color: white;
     font-size: 13px;
-    margin-top: 10px;
 }
 
 .contato{
@@ -205,7 +204,8 @@ td, th{
 .lista-servicos{
     display: inline-block;
     vertical-align: middle;
-    padding: 5em 0;
+    padding: 3em 0 6em;
+    margin: 0 0 0 45px;
 }
 
 .itens{
@@ -218,10 +218,11 @@ td, th{
 
 
 .imagem-servicos{
-    width: 50%;
+    width: 30%;
     vertical-align: middle;
     float: right;
-    padding: 2em;
+    box-shadow: 5px 5px 5px #4F4F4F;
+    margin: 0 2.5em 0 0;
 }
 
 .video{
