@@ -2,8 +2,8 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-header{
-    background: rgb(241, 199, 182);
+header{ 
+    background: linear-gradient( rgb(241, 199, 182), #FEFEFE);
 }
 
 nav{
@@ -220,9 +220,9 @@ td, th{
 .imagem-servicos{
     width: 30%;
     vertical-align: middle;
-    float: right;
-    box-shadow: 5px 5px 5px #4F4F4F;
-    margin: 0 2.5em 0 0;
+    float: left;
+    box-shadow: -5px -5px 12px #4F4F4F;
+    margin: 0 0 0 2.5em;
 }
 
 .video{
