@@ -1,0 +1,19 @@
+{
+  "name": "coisasecoisas",
+  "version": "1.0.0",
+  "description": "Paginas web para a loja Coisas&amp;Coisas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viictorivo/coisasecoisas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viictorivo/coisasecoisas/issues"
+  },
+  "homepage": "https://github.com/viictorivo/coisasecoisas#readme"
+}

@@ -1,9 +1,12 @@
 const express = require ("express");
 const app = express();
 const connection = require ("./database/database");
-const productModel = require ("./database/Product");
-const productController = require("./Controller/Procuct");
-const categoryController = require("./Controller/Category");
+const productController = require("./src/Controller/Product");
+const categoryController = require("./src/Controller/Category");
+
+const categoryModel = require("./src/Model/categoryModel");
+const productModel = require("./src/Model/productModel");
+
 
 connection
     .authenticate().then(() => {
@@ -12,7 +15,7 @@ connection
     console.log(err);
 })
 
-app.use("/", productController);
+app.use("/", productController );
 app.use("/", categoryController);
 
 app.listen( 8090, () => {
