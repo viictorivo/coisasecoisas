@@ -1,14 +1,26 @@
 const express = require("express");
 const router = express.Router();
+const productModel = require("../../src/Model/productModel");
 
 router.post("/saveproduct", (req, res) => {
-    var nome = req.body.nome;
-    var tipo = req.body.tipo;
-    var preco_venda = req.body.preco_venda;
-    var preco_custo = req.body.preco_custo;
-    var quantidade = req.body.quantidade;
-    var data_compra = req.body.data_compra;
-});
+    
+    let {name, category, price_sale, price_cost, amount, date} = req.body.product;
+
+    if(name != undefined || category != undefined || category != undefined ||
+        price_sale != undefined || price_cost != undefined || amount != undefined || date != undefined  ){
+        productModel.create({
+            nome:name,
+            categoria:category,
+            preco_venda:price_sale,
+            preco_custo:price_cost,
+            quantidade:amount,
+            data_compra:date
+        })
+    } else {
+        res.sendStatus(400);
+    }
+    res.sendStatus(200);
+}); 
 
 
 router.get("/listproducts", (req, res) =>{

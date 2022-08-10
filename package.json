@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/viictorivo/coisasecoisas/issues"
   },
-  "homepage": "https://github.com/viictorivo/coisasecoisas#readme"
+  "homepage": "https://github.com/viictorivo/coisasecoisas#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
