@@ -1,20 +1,12 @@
 const express = require ("express");
 const app = express();
-const connection = require ("./database/database");
-const productController = require("./src/Controller/Product");
-const categoryController = require("./src/Controller/Category");
+const connection = require ("./src/database/database");
 const bodyParser = require('body-parser');
-
-const categoryModel = require("./src/Model/categoryModel");
-const productModel = require("./src/Model/productModel");
-
+const routes = require ("./src/routes");
 const cors = require("cors");
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-
-
-
 app.use(cors());
 
 connection
@@ -24,9 +16,7 @@ connection
     console.log(err);
 })
 
-app.use("/", productController );
-app.use("/", categoryController);
-
+app.use(routes);
 
 app.listen( 8090, () => {
     console.log("api rodando");
